@@ -3,7 +3,8 @@ import NavBar from "./components/NavBar"
 
 
 function App() {
-return <Grid templateAreas={{
+  return (
+    <Grid templateAreas={{
   //small screens like mobile
   base: `"nav"  "main"`,
   //wider screens like 1024 px and above
@@ -13,12 +14,14 @@ return <Grid templateAreas={{
   <NavBar/>
 </GridItem>
 <Show above="lg">
-<GridItem area="aside" bg= "gold">Aside</GridItem> 
+<GridItem area="aside" >Aside</GridItem> 
 </Show>
-<GridItem area="main" bg= "dodgerblue">Main</GridItem>
+<GridItem area="main" >Main</GridItem>
 
 
-</Grid>
+    </Grid>
+  )
+  
 }
 
 export default App
